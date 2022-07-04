@@ -7,7 +7,7 @@ import './Home.css'
 import RecipeList from '../../components/RecipeList'
 
 export default function Home() {
-  const { data, isPending, error } = useFetch('http://localhost:3000/recipes')
+  const { data, isPending, error } = useFetch('https://jsonserver-recipe.herokuapp.com/recipes')
 
   return (
     <div className="home">
